@@ -1,0 +1,21 @@
+{
+	"nodes":[
+		{"id":"title","type":"text","text":"# 第四层：句间关系\n\n句子之间如何连接、信息如何流动、段落如何构建。","x":-200,"y":-200,"width":400,"height":100,"color":"4"},
+		{"id":"coord","type":"file","file":"40-第四层-句间关系/概念/并列与从属.md","x":-350,"y":0,"width":250,"height":60},
+		{"id":"info","type":"file","file":"40-第四层-句间关系/概念/信息结构.md","x":-50,"y":0,"width":250,"height":60},
+		{"id":"cohesion","type":"file","file":"40-第四层-句间关系/概念/衔接与连贯.md","x":250,"y":0,"width":250,"height":60},
+		{"id":"punctuation","type":"file","file":"40-第四层-句间关系/概念/标点符号的结构意义.md","x":550,"y":0,"width":250,"height":60},
+		{"id":"puzzle1","type":"file","file":"40-第四层-句间关系/谜题/谜题4.1-段落信息流分析.md","x":-50,"y":300,"width":280,"height":60,"color":"6"},
+		{"id":"puzzle2","type":"file","file":"40-第四层-句间关系/谜题/谜题4.2-连接词选择.md","x":280,"y":300,"width":280,"height":60,"color":"6"},
+		{"id":"bridge","type":"file","file":"80-桥梁/中英对比/意合与形合.md","x":-50,"y":150,"width":250,"height":60,"color":"2"}
+	],
+	"edges":[
+		{"id":"e1","fromNode":"coord","toNode":"info","fromSide":"right","toSide":"left"},
+		{"id":"e2","fromNode":"info","toNode":"cohesion","fromSide":"right","toSide":"left"},
+		{"id":"e3","fromNode":"cohesion","toNode":"bridge","fromSide":"bottom","toSide":"right","color":"2","label":"桥梁"},
+		{"id":"e4","fromNode":"cohesion","toNode":"punctuation","fromSide":"right","toSide":"left"},
+		{"id":"e5","fromNode":"info","toNode":"puzzle1","fromSide":"bottom","toSide":"top","color":"6","label":"谜题"},
+		{"id":"e6","fromNode":"cohesion","toNode":"puzzle2","fromSide":"bottom","toSide":"top","color":"6","label":"谜题"},
+		{"id":"e7","fromNode":"coord","toNode":"punctuation","fromSide":"bottom","toSide":"top","label":"前置"}
+	]
+}

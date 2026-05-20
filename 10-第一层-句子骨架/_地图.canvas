@@ -1,0 +1,30 @@
+{
+	"nodes":[
+		{"id":"sv","type":"text","text":"**SV**\nBirds fly.\nTime passes.","x":-500,"y":60,"width":180,"height":100},
+		{"id":"svo","type":"text","text":"**SVO**\nI love coffee.\nShe saw the truth.","x":-260,"y":60,"width":190,"height":100},
+		{"id":"svc","type":"text","text":"**SVC**\nHe is tall.\nShe seems tired.","x":0,"y":60,"width":180,"height":100},
+		{"id":"svoo","type":"text","text":"**SVOO**\nHe gave her a book.\nI told you the answer.","x":250,"y":60,"width":210,"height":100},
+		{"id":"svoc","type":"text","text":"**SVOC**\nThey made her happy.\nWe call him boss.","x":500,"y":60,"width":240,"height":100},
+		{"id":"puzzle1","type":"file","file":"10-第一层-句子骨架/谜题/谜题1.1-游戏台词中的骨架.md","x":-400,"y":260,"width":280,"height":60,"color":"6"},
+		{"id":"puzzle2","type":"file","file":"10-第一层-句子骨架/谜题/谜题1.2-新闻长句的骨架.md","x":-50,"y":260,"width":280,"height":60,"color":"6"},
+		{"id":"puzzle3","type":"file","file":"10-第一层-句子骨架/谜题/谜题1.3-文学名句的骨架.md","x":300,"y":260,"width":280,"height":60,"color":"6"},
+		{"id":"puzzle4","type":"file","file":"10-第一层-句子骨架/谜题/谜题1.4-通关测试.md","x":-165,"y":440,"width":490,"height":260,"color":"3"},
+		{"id":"next","type":"text","text":"## ⬆ 下一层\n[[20-第二层-修饰与扩展/_地图.canvas|第二层地图]]\n\n掌握骨架后，学习\"外套\"是怎么穿上去的。","x":-165,"y":780,"width":490,"height":160,"color":"5"},
+		{"id":"core","type":"file","file":"10-第一层-句子骨架/概念/五大基本句型.md","x":-120,"y":-340,"width":420,"height":280,"color":"4"},
+		{"id":"title","type":"text","text":"# 第一层：句子骨架\n\n找到每个句子的主干——不管它穿了多厚的外套。","x":-565,"y":-260,"width":400,"height":120,"color":"1"}
+	],
+	"edges":[
+		{"id":"e1","fromNode":"core","fromSide":"bottom","toNode":"sv","toSide":"top"},
+		{"id":"e2","fromNode":"core","fromSide":"bottom","toNode":"svo","toSide":"top"},
+		{"id":"e3","fromNode":"core","fromSide":"bottom","toNode":"svc","toSide":"top"},
+		{"id":"e4","fromNode":"core","fromSide":"bottom","toNode":"svoo","toSide":"top"},
+		{"id":"e5","fromNode":"core","fromSide":"bottom","toNode":"svoc","toSide":"top"},
+		{"id":"e6","fromNode":"core","fromSide":"bottom","toNode":"puzzle1","toSide":"top","color":"6","label":"练习"},
+		{"id":"e7","fromNode":"core","fromSide":"bottom","toNode":"puzzle2","toSide":"top","color":"6","label":"练习"},
+		{"id":"e8","fromNode":"core","fromSide":"bottom","toNode":"puzzle3","toSide":"top","color":"6","label":"练习"},
+		{"id":"e9","fromNode":"puzzle1","fromSide":"bottom","toNode":"puzzle4","toSide":"top","color":"3","label":"通关"},
+		{"id":"e10","fromNode":"puzzle2","fromSide":"bottom","toNode":"puzzle4","toSide":"top","color":"3"},
+		{"id":"e11","fromNode":"puzzle3","fromSide":"bottom","toNode":"puzzle4","toSide":"top","color":"3"},
+		{"id":"e12","fromNode":"puzzle4","fromSide":"bottom","toNode":"next","toSide":"top","color":"5"}
+	]
+}

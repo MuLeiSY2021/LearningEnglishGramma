@@ -1,0 +1,35 @@
+{
+	"nodes":[
+		{"id":"title","type":"text","text":"# 第三层：从句世界\n\n句子里嵌套句子——关系从句、名词从句、状语从句，以及它们的缩减形式。\n虚拟语气和比较结构是考研必考的从句特殊用法。","x":-200,"y":-200,"width":440,"height":120,"color":"4"},
+		{"id":"rel","type":"file","file":"30-第三层-从句世界/概念/关系从句.md","x":-350,"y":0,"width":250,"height":60},
+		{"id":"noun","type":"file","file":"30-第三层-从句世界/概念/名词从句.md","x":-50,"y":0,"width":250,"height":60},
+		{"id":"adv","type":"file","file":"30-第三层-从句世界/概念/状语从句.md","x":250,"y":0,"width":250,"height":60},
+		{"id":"that","type":"file","file":"30-第三层-从句世界/概念/that的多重身份.md","x":-50,"y":100,"width":250,"height":60,"color":"6"},
+		{"id":"subjunctive","type":"file","file":"30-第三层-从句世界/概念/虚拟语气.md","x":-400,"y":160,"width":250,"height":60,"color":"3"},
+		{"id":"comparative","type":"file","file":"30-第三层-从句世界/概念/比较结构.md","x":300,"y":160,"width":250,"height":60,"color":"3"},
+		{"id":"reduced","type":"file","file":"30-第三层-从句世界/概念/从句缩减.md","x":-50,"y":280,"width":250,"height":60},
+		{"id":"puzzle1","type":"file","file":"30-第三层-从句世界/谜题/谜题3.1-嵌套从句解析.md","x":-400,"y":380,"width":280,"height":60,"color":"5"},
+		{"id":"puzzle2","type":"file","file":"30-第三层-从句世界/谜题/谜题3.2-从句类型识别.md","x":170,"y":380,"width":280,"height":60,"color":"5"}
+	],
+	"edges":[
+		{"id":"e1","fromNode":"rel","toNode":"reduced","fromSide":"bottom","toSide":"left"},
+		{"id":"e2","fromNode":"adv","toNode":"reduced","fromSide":"bottom","toSide":"right"},
+		{"id":"e3","fromNode":"noun","toNode":"reduced","fromSide":"bottom","toSide":"top"},
+		{"id":"e4","fromNode":"rel","toNode":"that","fromSide":"bottom","toSide":"left","label":"that 作关系代词"},
+		{"id":"e5","fromNode":"noun","toNode":"that","fromSide":"bottom","toSide":"top","label":"that 作连接词"},
+		{"id":"e6","fromNode":"adv","toNode":"that","fromSide":"bottom","toSide":"right","label":"so...that"},
+		{"id":"e7","fromNode":"adv","toNode":"subjunctive","fromSide":"left","toSide":"top","label":"条件虚拟"},
+		{"id":"e8","fromNode":"adv","toNode":"comparative","fromSide":"right","toSide":"top","label":"比较从句"},
+		{"id":"e9","fromNode":"subjunctive","toNode":"reduced","fromSide":"right","toSide":"left","label":"倒装虚拟"},
+		{"id":"e10","fromNode":"comparative","toNode":"reduced","fromSide":"left","toSide":"right","label":"比较省略"},
+		{"id":"e11","fromNode":"rel","toNode":"puzzle1","fromSide":"bottom","toSide":"top"},
+		{"id":"e12","fromNode":"noun","toNode":"puzzle1","fromSide":"bottom","toSide":"top"},
+		{"id":"e13","fromNode":"adv","toNode":"puzzle1","fromSide":"bottom","toSide":"top"},
+		{"id":"e14","fromNode":"rel","toNode":"puzzle2","fromSide":"bottom","toSide":"top"},
+		{"id":"e15","fromNode":"noun","toNode":"puzzle2","fromSide":"bottom","toSide":"top"},
+		{"id":"e16","fromNode":"adv","toNode":"puzzle2","fromSide":"bottom","toSide":"top"},
+		{"id":"e17","fromNode":"reduced","toNode":"puzzle2","fromSide":"bottom","toSide":"top"},
+		{"id":"e18","fromNode":"subjunctive","toNode":"puzzle1","fromSide":"bottom","toSide":"left"},
+		{"id":"e19","fromNode":"comparative","toNode":"puzzle2","fromSide":"bottom","toSide":"right"}
+	]
+}

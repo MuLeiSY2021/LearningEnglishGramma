@@ -1,0 +1,26 @@
+{
+	"nodes":[
+		{"id":"title","type":"text","text":"# 第二层：修饰与扩展\n\n理解句子骨架的\"外套\"——名词短语、动词短语、介词短语、非谓语动词。\n限定词系统是名词短语的入口。","x":-200,"y":-280,"width":400,"height":120,"color":"4"},
+		{"id":"det","type":"file","file":"20-第二层-修饰与扩展/概念/限定词与冠词.md","x":-650,"y":-80,"width":250,"height":60,"color":"6"},
+		{"id":"np","type":"file","file":"20-第二层-修饰与扩展/概念/名词短语.md","x":-400,"y":40,"width":250,"height":60},
+		{"id":"vp","type":"file","file":"20-第二层-修饰与扩展/概念/动词短语.md","x":-100,"y":40,"width":250,"height":60},
+		{"id":"pp","type":"file","file":"20-第二层-修饰与扩展/概念/介词短语.md","x":200,"y":40,"width":250,"height":60},
+		{"id":"nfv","type":"file","file":"20-第二层-修饰与扩展/概念/非谓语动词.md","x":-100,"y":160,"width":250,"height":60},
+		{"id":"tense","type":"file","file":"20-第二层-修饰与扩展/概念/时态与体.md","x":200,"y":160,"width":250,"height":60,"color":"5"},
+		{"id":"bridge","type":"file","file":"80-桥梁/中英对比/的-结构与后置修饰.md","x":-400,"y":280,"width":250,"height":60,"color":"2"},
+		{"id":"puzzle21","type":"file","file":"20-第二层-修饰与扩展/谜题/谜题2.1-名词短语拆解.md","x":-650,"y":280,"width":280,"height":60,"color":"1"},
+		{"id":"puzzle22","type":"file","file":"20-第二层-修饰与扩展/谜题/谜题2.2-介词短语的角色.md","x":100,"y":280,"width":280,"height":60,"color":"1"},
+		{"id":"agr","type":"file","file":"20-第二层-修饰与扩展/概念/主谓一致.md","x":450,"y":160,"width":250,"height":60,"color":"3"}
+	],
+	"edges":[
+		{"id":"e1","fromNode":"np","toNode":"nfv","fromSide":"bottom","toSide":"left"},
+		{"id":"e2","fromNode":"vp","toNode":"nfv","fromSide":"bottom","toSide":"top"},
+		{"id":"e3","fromNode":"pp","toNode":"nfv","fromSide":"bottom","toSide":"right"},
+		{"id":"e4","fromNode":"np","toNode":"bridge","fromSide":"bottom","toSide":"top","color":"2","label":"桥梁"},
+		{"id":"e5","fromNode":"det","toNode":"np","fromSide":"right","toSide":"left","label":"输入"},
+		{"id":"e6","fromNode":"vp","toNode":"tense","fromSide":"right","toSide":"top","label":"详解"},
+		{"id":"e7","fromNode":"np","toNode":"puzzle21","fromSide":"bottom","toSide":"top","color":"1","label":"练习"},
+		{"id":"e8","fromNode":"pp","toNode":"puzzle22","fromSide":"bottom","toSide":"top","color":"1","label":"练习"},
+		{"id":"e9","fromNode":"vp","toNode":"agr","fromSide":"right","toSide":"left","label":"一致"}
+	]
+}

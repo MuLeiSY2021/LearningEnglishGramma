@@ -1,0 +1,6 @@
+# Obsidian workspace (个人配置，不跟踪)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+
+# Claude Code local settings
+.claude/

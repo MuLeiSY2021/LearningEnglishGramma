@@ -1,0 +1,26 @@
+{
+	"nodes":[
+		{"id":"title","type":"text","text":"# 第五层：高阶结构\n\n打破常规语序的特殊结构——倒装、分裂句、外置、省略、花园路径句、名词化。它们存在的理由：管理信息重量与焦点。","x":-200,"y":-200,"width":440,"height":120,"color":"4"},
+		{"id":"inv","type":"file","file":"50-第五层-高阶结构/概念/倒装.md","x":-460,"y":0,"width":220,"height":60},
+		{"id":"cleft","type":"file","file":"50-第五层-高阶结构/概念/分裂句.md","x":-200,"y":0,"width":220,"height":60},
+		{"id":"extra","type":"file","file":"50-第五层-高阶结构/概念/外置.md","x":60,"y":0,"width":220,"height":60},
+		{"id":"garden","type":"file","file":"50-第五层-高阶结构/概念/花园路径句.md","x":320,"y":0,"width":220,"height":60},
+		{"id":"nominal","type":"file","file":"50-第五层-高阶结构/概念/名词化与信息压缩.md","x":-460,"y":120,"width":260,"height":60},
+		{"id":"ellip","type":"file","file":"50-第五层-高阶结构/概念/省略与共享.md","x":-150,"y":120,"width":220,"height":60},
+		{"id":"neg","type":"file","file":"50-第五层-高阶结构/概念/否定与特殊句式.md","x":120,"y":120,"width":260,"height":60,"color":"3"},
+		{"id":"puzzle51","type":"file","file":"50-第五层-高阶结构/谜题/谜题5.1-综合解析.md","x":-100,"y":260,"width":260,"height":60,"color":"6"}
+	],
+	"edges":[
+		{"id":"e1","fromNode":"inv","fromSide":"bottom","toNode":"ellip","toSide":"left"},
+		{"id":"e2","fromNode":"cleft","fromSide":"bottom","toNode":"ellip","toSide":"top"},
+		{"id":"e3","fromNode":"extra","fromSide":"bottom","toNode":"ellip","toSide":"right"},
+		{"id":"e4","fromNode":"garden","fromSide":"bottom","toNode":"nominal","toSide":"right","label":"密度制造歧义"},
+		{"id":"e5","fromNode":"inv","fromSide":"right","toNode":"cleft","toSide":"left","label":"焦点工具"},
+		{"id":"e6","fromNode":"cleft","fromSide":"right","toNode":"extra","toSide":"left","label":"It...that 区分"},
+		{"id":"e7","fromNode":"ellip","fromSide":"bottom","toNode":"puzzle51","toSide":"top"},
+		{"id":"e8","fromNode":"nominal","fromSide":"bottom","toNode":"puzzle51","toSide":"left"},
+		{"id":"e9","fromNode":"garden","fromSide":"bottom","toNode":"puzzle51","toSide":"right"},
+		{"id":"e10","fromNode":"inv","fromSide":"bottom","toNode":"neg","toSide":"left","label":"否定倒装"},
+		{"id":"e11","fromNode":"neg","fromSide":"bottom","toNode":"puzzle51","toSide":"right"}
+	]
+}
